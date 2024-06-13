@@ -15,6 +15,15 @@ const PerdasReativoDez = ["0", "107", "0", "298", "1061", "3", "0", "20", "0", "
 const PerdasSobraDemandaDez = ["10907", "0", "0", "6555", "3524", "2864", "2803", "2594", "2299", "1618"];
 const PerdasUtraDemandaDez = ["0", "9529", "7110", "0", "0", "0", "0", "0", "0", "0"];
 const PerdasMultasOutrosDez = ["0", "74", "0", "0", "0", "0", "0", "0", "0", "0"];
+// grafico 5
+const undPerdasDez = ["BV PATIO RORAIMA", "BV EQUATORIAL", "PV CATANTUARIA", "PONTA NEGRA", "ALVORADA", "VIVER MELHOR", "CIDADE DE DEUS", "PV IMIGRANTES", "PATIO ADRIANOPOLIS", "GRANDE CIRCULAR"];
+
+// grafico 6
+
+const nomePerdas = ["Total"];
+const valorMercado =  ["855123"];
+const valorConcessionaria =  ["1823177"];
+const valorPerdas =  ["61345"];
 
 
 // grafico 1
@@ -137,10 +146,10 @@ const createChart3 = (id) => {
         type: 'bar',
 
         data: {
-            labels: labels,
+            labels: nomePerdas,
             datasets: [{
-                label: 'Perda',
-                data: perdasReativoR$,
+                label: 'Mercado livre R$',
+                data: valorMercado,
                 backgroundColor: [
                     'rgba(54, 162, 235, 0.2)'
                 ],
@@ -149,8 +158,8 @@ const createChart3 = (id) => {
                 ],
                 borderWidth: 1
             }, {
-                label: 'Perda Demanda',
-                data: perdasDemandaR$,
+                label: 'Concessionária R$',
+                data: valorConcessionaria,
                 backgroundColor: [
                     'rgba(255, 206, 86, 0.2)'
                 ],
@@ -159,8 +168,8 @@ const createChart3 = (id) => {
                 ],
                 borderWidth: 1
             }, {
-                label: 'Multas e Outros',
-                data: multasOutros,
+                label: 'Perdas R$',
+                data: valorPerdas,
                 backgroundColor: [
                     'rgba(255, 26, 104, 0.2)'
                 ],
@@ -168,16 +177,10 @@ const createChart3 = (id) => {
                     'rgba(255, 12, 104, 1)'
                 ],
                 borderWidth: 1
-            }, {
-                label: 'Total de Perdas',
-                data: totalPerdas,
-                backgroundColor: 'rgba(153, 102, 255, 0.2)',
-                borderColor: 'rgba(153, 102, 255, 1)',
-                tension: 0.4,
-                type: 'line'
             }]
         },
         options: {
+            indexAxis: 'y',
             maintainAspectRatio: false,
             scales: {
                 x: {
@@ -272,8 +275,8 @@ createChart1('grafico2');
 createChart2('grafico3');
 createChart3('grafico4');
 createChart4('grafico5');
-createChart4('grafico6');
-createChart4('grafico7');
+// createChart4('grafico6');
+// createChart4('grafico7');
 
 $('.menu-hamburguer').click(function () {
     $('nav').slideToggle();
