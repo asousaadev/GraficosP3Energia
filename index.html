@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container container-flex">
+            <h2>Monitoramento P3Energia</h2>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">Gestão de Energia</a>
+                    </li>
+                    <li>
+                        <a href="#">Rateio de Custos</a>
+                    </li>
+                    <li>
+                        <a href="#">Gestão de Fauras</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container container-flex">
+        <div class="chartBox">
+            <canvas id="grafico1"></canvas>
+        </div>
+        <div class="chartBox">
+            <canvas id="grafico2"></canvas>
+        </div>
+    </section>
+    <section class="container container-flex">
+        <div class="chartBox">
+            <canvas id="grafico3"></canvas>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form>
+                <div class="form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-campo">
+                    <label for="veiculo-de-interesse">Veiculo de interesse:</label>
+                    <input type="text" id="veiculo-de-interesse" name="veiculoDeInteresse">
+                </div>
+                <div class="form-campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container container-flex">
+            <p>
+                2024 &copy; P3energia - Todos os direitos reservados
+            </p>
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="./icones/facebook.png" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/instagram.png" alt="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/youtube.png" alt="youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
