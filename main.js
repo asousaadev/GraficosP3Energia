@@ -199,11 +199,11 @@ const createChart4 = (id) => {
         type: 'bar',
 
         data: {
-            labels: labels,
+            labels: unidadesPerdasDez,
             datasets: [{
                 axis: 'y',
-                label: 'Perda',
-                data: perdasReativoR$,
+                label: 'Perda Reativo',
+                data: PerdasReativoDez,
                 backgroundColor: [
                     'rgba(54, 162, 235, 0.2)'
                 ],
@@ -212,8 +212,8 @@ const createChart4 = (id) => {
                 ],
                 borderWidth: 1
             }, {
-                label: 'Perda Demanda',
-                data: perdasDemandaR$,
+                label: 'Perda Sobra Demanda',
+                data: PerdasSobraDemandaDez,
                 backgroundColor: [
                     'rgba(255, 206, 86, 0.2)'
                 ],
@@ -222,8 +222,8 @@ const createChart4 = (id) => {
                 ],
                 borderWidth: 1
             }, {
-                label: 'Multas e Outros',
-                data: multasOutros,
+                label: 'Perda Ultra Demanda',
+                data: PerdasUtraDemandaDez,
                 backgroundColor: [
                     'rgba(255, 26, 104, 0.2)'
                 ],
@@ -232,8 +232,18 @@ const createChart4 = (id) => {
                 ],
                 borderWidth: 1
             }, {
+                label: 'Multas Outros',
+                data: PerdasMultasOutrosDez,
+                backgroundColor: [
+                    'rgba(0, 0, 0, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(0, 0, 0, 1)'
+                ],
+                borderWidth: 1
+            }, {
                 label: 'Total de Perdas',
-                data: totalPerdas,
+                data: totalPerdasDez,
                 backgroundColor: 'rgba(153, 102, 255, 0.2)',
                 borderColor: 'rgba(153, 102, 255, 1)',
                 tension: 0.4,
