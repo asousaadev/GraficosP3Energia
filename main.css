@@ -15,16 +15,11 @@
     'rgba(0, 0, 0, 0.2)'
 } */
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #1d2634;
-    color: #9e9ea4;
-}
 
 html {
     overflow-x: hidden;
 }
+
 
 .material-icons-outlined {
     vertical-align: middle;
@@ -45,22 +40,6 @@ html {
     align-items: center;
     justify-content: center;
 }
-
-aside {
-    padding-left: 40px;
-}
-
-aside .noticia {
-    margin-bottom: 24px;
-}
-
-.noticias {
-    display: grid;
-    grid-template-columns: 32.6% 32.6% 32.6%;
-    column-gap: 1%;
-    row-gap: 5%;
-}
-
 
 header,
 footer {
@@ -115,19 +94,22 @@ nav li a {
     margin-bottom: 4px;
 }
 
-/* -------- CARD ---------- */
 
 /* ---------- MAIN ---------- */
 .main-container {
-    grid-area: main;
+    max-width: 90%;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 0;
     overflow-y: auto;
     padding: 20px 20px;
-    color: rgba(255, 255, 255, 0.95);
 }
 
 .main-title {
     display: flex;
     justify-content: space-between;
+    color: #fff;
+    margin-top: 16px;
 }
 
 .main-cards {
@@ -143,22 +125,31 @@ nav li a {
     justify-content: space-around;
     padding: 25px;
     border-radius: 5px;
+    color: #fff;
 }
 
 .card:first-child {
-    background-color: rgba(54, 162, 235, 0.2);
+    background-color: rgba(54, 162, 235, 0.7);
+    border: 1px solid rgba(54, 162, 235, 01);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .card:nth-child(2) {
-    background-color: rgba(54, 162, 235, 0.1);
+    background-color: rgba(54, 162, 235, 0.7);
+    border: 1px solid rgba(54, 162, 235, 01);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .card:nth-child(3) {
     background-color: rgba(54, 162, 235, 0.7);
+    border: 1px solid rgba(54, 162, 235, 01);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .card:nth-child(4) {
     background-color: rgba(54, 162, 235, 0.7);
+    border: 1px solid rgba(54, 162, 235, 01);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .card-inner {
@@ -184,6 +175,30 @@ section {
     background-color: #f1f1f1;
     padding: 16px 20px;
 }
+
+.charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.charts-card {
+    background-color: #263043;
+    margin-bottom: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+    -webkit-column-break-inside: avoid;
+    border-radius: 5px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+}
+
+.chart-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .chartMenu p {
     padding: 10px;
