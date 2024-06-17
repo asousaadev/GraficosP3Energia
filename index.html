@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <title>Dashboard</title>
     <link rel="stylesheet" href="main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outline" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
@@ -37,38 +43,77 @@
             </div>
         </nav>
     </header>
-    <section id="gestaoEnegia">
-        <div class="container container-flex">
-            <div class="chartBox">
-                <canvas id="grafico1"></canvas>
+    <div >
+        <main class="container">
+            <div class="main-title">
+                <h2>DASHBOARD</h2>
             </div>
-            <div class="chartBox">
-                <canvas id="grafico2"></canvas>
-            </div>
-        </div>
-        <div class="container container-flex">
-            <div class="chartBox">
-                <canvas id="grafico3"></canvas>
-            </div>
-            <div class="chartBox">
-                <canvas id="grafico4"></canvas>
-            </div>
-        </div>
-        <div class="container container-flex">
-            <div class="chartBox boxVertical">
-                <canvas id="grafico5"></canvas>
-            </div>
-            <div class="chartBox boxVertical">
-                <canvas id="grafico6"></canvas>
-            </div>
-            <div class="chartBox boxVertical">
-                <canvas id="grafico7"></canvas>
-            </div>
-        </div>
-    </section>
+    
+            <div class="main-cards">
+    
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>PRODUCTS</h3>
+                    </div>
+                    <h1>249</h1>
+                </div>
+    
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>CATEGORIES</h3>
+                    </div>
+                    <h1>25</h1>
+                </div>
+    
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>CUSTOMERS</h3>
+                    </div>
+                    <h1>1500</h1>
+                </div>
+    
+                <!-- <div class="card">
+                    <div class="card-inner">
+                        <h3>ALERTS</h3>
+                    </div>
+                    <h1>56</h1>
+                </div> -->
+    </div>
 
 
-    <!-- <section>
+        </div>
+        <section id="gestaoEnegia">
+            <div class="container container-flex">
+                <div class="chartBox">
+                    <canvas id="grafico1"></canvas>
+                </div>
+                <div class="chartBox">
+                    <canvas id="grafico2"></canvas>
+                </div>
+            </div>
+            <div class="container container-flex">
+                <div class="chartBox">
+                    <canvas id="grafico3"></canvas>
+                </div>
+                <div class="chartBox">
+                    <canvas id="grafico4"></canvas>
+                </div>
+            </div>
+            <div class="container container-flex">
+                <div class="chartBox boxVertical">
+                    <canvas id="grafico5"></canvas>
+                </div>
+                <div class="chartBox boxVertical">
+                    <canvas id="grafico6"></canvas>
+                </div>
+                <div class="chartBox boxVertical">
+                    <canvas id="grafico7"></canvas>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- <section>
         <div class="container">
             <h2>Entre em contato</h2>
             <form>
@@ -96,39 +141,40 @@
             </form>
         </div>
     </section> -->
-    <footer>
-        <div class="container container-flex">
-            <p>
-                2024 &copy; P3energia - Todos os direitos reservados
-            </p>
-            <ul class="container-flex">
-                <li>
-                    <a href="#">
-                        <img src="./icones/facebook.png" alt="facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./icones/instagram.png" alt="instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./icones/youtube.png" alt="youtube">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./js/jquery.mask.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script src="./js/messages_pt_BR.min.js"></script>
-    <script src="./main.js"></script>
+        <footer>
+            <div class="container container-flex">
+                <p>
+                    2024 &copy; P3energia - Todos os direitos reservados
+                </p>
+                <ul class="container-flex">
+                    <li>
+                        <a href="#">
+                            <img src="./icones/facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icones/instagram.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./icones/youtube.png" alt="youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/jquery.mask.min.js"></script>
+        <script src="./js/jquery.validate.min.js"></script>
+        <script src="./js/messages_pt_BR.min.js"></script>
+        <script src="./main.js"></script>
 </body>
 
 </html>
